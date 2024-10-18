@@ -1,0 +1,15 @@
+.body{
+    font-family:'Trebuchet MS', sans-serif;
+    background-color: antiquewhite;
+    display: flex;
+}
+header{
+position: fixed;
+background-color: black;
+justify-content: space-between;
+}
+
+header.logo {
+size: 5px;
+margin-left: 10px;
+}
