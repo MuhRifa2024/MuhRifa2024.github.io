@@ -145,11 +145,12 @@ nav ul li a:hover {
         display: flex;
     }
     nav ul {
-        position: relative;
+        position: absolute;
         right: 0;
         top: 0;
         width: 80%;
         height: 100vh;
+        margin: 0;
         justify-content: space-evenly;
         flex-direction: column;
         align-items: center;
