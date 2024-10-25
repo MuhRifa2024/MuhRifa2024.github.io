@@ -78,6 +78,7 @@ nav ul li a:hover {
     top: 50%;
     width: 100%;
     align-items: center;
+    justify-content: center;
     font-size: 80px;
     color: rgb(189, 125, 42);
     flex-direction: initial;
