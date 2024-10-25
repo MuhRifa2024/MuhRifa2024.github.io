@@ -141,6 +141,11 @@ nav ul li a:hover {
     nav ul {
         width: 50%;
     }
+
+    .img-background img {
+        background-repeat: repeat;
+    }
+    
 }
 
 /* ukuran mobile */
