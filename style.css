@@ -73,6 +73,7 @@ nav ul li a:hover {
 
 
 .center h1 {
+    display: flex;
     position: absolute;
     top: 50%;
     width: 100%;
