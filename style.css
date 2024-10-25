@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -6,6 +6,10 @@
 body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
+    background-image: url('https://www.icegif.com/wp-content/uploads/2023/12/icegif-790.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 /* navbar */
@@ -39,7 +43,7 @@ nav .img-logo {
 }
 
 nav ul li a {
-    color:  beige;
+    color: beige;
     text-decoration: none;
     font-size: 0.8em;
 }
@@ -50,7 +54,7 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* background */
+/* background
 
 .img-background {
     z-index: -2;
@@ -64,7 +68,7 @@ nav ul li a:hover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: cover;
+    background-image: cover; */
 
 }
 
@@ -78,6 +82,7 @@ nav ul li a:hover {
     flex-direction: initial;
     font-family: "Playwrite GB S", cursive;
 }
+
 /* Humburger */
 
 .menu-toggle {
@@ -117,17 +122,17 @@ nav ul li a:hover {
     transform-origin: 0 100%;
 }
 
-.menu-toggle input:checked ~ span:nth-child(2) {
+.menu-toggle input:checked~span:nth-child(2) {
     background-color: white;
     transform: rotate(45deg) translate(-1px, -1px);
 }
 
-.menu-toggle input:checked ~ span:nth-child(4) {
+.menu-toggle input:checked~span:nth-child(4) {
     background-color: white;
     transform: rotate(-45deg) translate(-1px, 0);
 }
 
-.menu-toggle input:checked ~ span:nth-child(3) {
+.menu-toggle input:checked~span:nth-child(3) {
     opacity: 0;
     transform: scale(0);
 }
@@ -147,7 +152,7 @@ nav ul li a:hover {
         min-height: 60vh;
         background-size: cover;
     }
-    
+
 }
 
 /* ukuran mobile */
@@ -155,6 +160,7 @@ nav ul li a:hover {
     .menu-toggle {
         display: flex;
     }
+
     nav ul {
         position: absolute;
         right: 0;
@@ -176,4 +182,3 @@ nav ul li a:hover {
         transform: translateX(0);
     }
 }
-
