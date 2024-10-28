@@ -112,6 +112,26 @@ nav ul li a:hover {
     transition: all 0.4s;
 }
 
+/* about */
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    z-index: -2;
+}
+
+.card {
+    z-index: -2;
+}
+
+.card-body {
+    z-index: -2;
+}
+
+
+
 /* humberger animation */
 .menu-toggle span:nth-child(2) {
     transform-origin: 0 0;
@@ -193,4 +213,8 @@ nav ul li a:hover {
     font-family: "Playwrite GB S", cursive;
     z-index: -2;
     }
+
+    /* .card-body { 
+        z-index: -3;
+    }*/
 }
