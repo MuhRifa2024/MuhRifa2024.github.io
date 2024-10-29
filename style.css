@@ -133,6 +133,7 @@ footer {
     align-items: center;
     height: 50vh;
     z-index: -8;
+    border-radius: 8px;
 }
 
 .card {
