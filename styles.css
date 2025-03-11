@@ -5,11 +5,40 @@ body {
     overflow: clip;
     display: grid;
     place-items: center;
-    transition: background 1s;
-    background: #944747;
+    background: #000; /* Warna solid default */
 }
 
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("src/moya.jpg") no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0; /* Awalnya tidak terlihat */
+    transition: opacity 1s; /* Transisi untuk perubahan opacity */
+    z-index: -1; /* Pastikan di belakang konten */
+}
 
+body:hover::before {
+    opacity: 1; /* Munculkan gambar latar belakang saat hover */
+}
+
+nav {
+    filter: drop-shadow(0.25rem 0.25rem 0.5rem #0005);
+    width: 100%;
+    max-width: 14rem;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 1rem #0005;
+}
 
 @keyframes firstShow {
 
@@ -33,32 +62,28 @@ body {
     }
 }
 
+/* Gaya untuk ul dan li tetap sama */
 ul {
     position: relative;
-    aperspective: 1000px;
+    perspective: 1000px;
     list-style: none;
     padding-left: 0;
     box-sizing: border-box;
     border-radius: 1rem;
     transform-style: preserve-3d;
     perspective: 1000px;
-    font:
-        lighter 1rem Helvetica,
-        sans-serif;
+    font: lighter 1rem Helvetica, sans-serif;
+}
 
-    li {
-        height: 3rem;
-        display: flex;
-        background: linear-gradient(#00000005, #0000), #fff;
-        aborder-bottom: 1px solid #0001;
-        abackground-clip: padding-box;
-        box-shadow: inset 0 0 1rem -0.5rem #0002;
-        transition: transform 0.35s, box-shadow 0.35s, background 0.35s;
-        transform: translate3d(0, 0, 0);
-        opacity: 0;
-        animation:
-            firstShow 0.5s ease-in-out,
-            show 0.15s linear forwards;
+li {
+    height: 3rem;
+    display: flex;
+    background: linear-gradient(#d9d9d9, #b3b3b3), #f0f0f0;
+    box-shadow: inset 0 0 1rem -0.5rem rgba(0, 0, 0, 0.719);
+    transition: transform 0.35s, box-shadow 0.35s, background 0.35s;
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+    animation: firstShow 0.5s ease-in-out, show 0.15s linear forwards;
 
         &:nth-child(1) {
             animation-delay: 0.50s;
@@ -113,18 +138,18 @@ ul {
         &:has(+ &:focus-within),
         &:focus+&,
         &:has(+ &:focus-within) {
-            box-shadow: inset 0 1rem 1rem -1rem #0003;
+            box-shadow: inset 0 1rem 1rem -1rem rgba(0, 0, 0, 0.678);
             transform: translate3d(0, 0, 2rem);
         }
 
         &:has(+ &:hover),
         &:has(+ &:focus-within) {
-            box-shadow: inset 0 -1rem 1rem -1rem #0003;
+            box-shadow: inset 0 -1rem 1rem -1rem rgba(0, 0, 0, 0.479);
         }
 
         &:hover+&+&,
         &:focus-within+&+& {
-            box-shadow: inset 0 1rem 0.5rem -0.75rem #0002;
+            box-shadow: inset 0 1rem 0.5rem -0.75rem rgba(0, 0, 0, 0.678);
         }
 
         &:has(+ & + &:hover),
@@ -153,7 +178,6 @@ ul {
         margin-right: 0.25em;
         width: 1rem;
     }
-}
 
 
 nav {
