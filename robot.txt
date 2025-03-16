@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pai.renz.my.id/sitemap.xml 
