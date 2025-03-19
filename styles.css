@@ -12,6 +12,7 @@ body {
     display: grid;
     place-items: center;
     background: #000; /* Warna solid default */
+    font-size: 16px;
 }
 
 body::before {
@@ -34,7 +35,7 @@ body:hover::before {
 
 nav {
     filter: drop-shadow(0.25rem 0.25rem 0.5rem #0005);
-    width: 100%;
+    width: 90%;
     max-width: 14rem;
     margin-bottom: -200px;
 }
@@ -187,11 +188,11 @@ li {
     }
 
 
-nav {
+/* nav {
     filter: drop-shadow(0.25rem 0.25rem 0.5rem #0005);
     width: 100%;
     max-width: 14rem;
-}
+} */
 @media (prefers-reduced-motion) {
     nav * {
         transition-duration: 0s !important;
