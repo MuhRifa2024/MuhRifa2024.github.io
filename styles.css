@@ -198,3 +198,20 @@ nav {
         animation-duration: 0s !important;
     }
 }
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
