@@ -204,6 +204,22 @@ li {
     body {
         font-size: 14px;
     }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        max-width: 12rem;
+    }
+
+    li {
+        height: 2.5rem;
+    }
+
+    h2, a {
+        font-size: 0.8rem;
+    }
 }
 
 @media (max-width: 480px) {
