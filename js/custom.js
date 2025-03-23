@@ -31,12 +31,21 @@ $(".owl-carousel").owlCarousel({
     }
 });
 
-/** google_map js **/
+// Ubah foto secara Oto
+const images = [
+    "images/PP2.png",
+    "images/PP3.png",
+    "images/PP4.png"
+];
 
-function myMap() {
-    var mapProp = {
-        center: new google.maps.LatLng(40.712775, -74.005973),
-        zoom: 18,
-    };
-    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+let currentIndex = 0; // Indeks gambar saat ini
+const imageElement = document.getElementById("slider-image"); // Ambil elemen gambar
+
+// Fungsi untuk mengubah gambar
+function changeImage() {
+    currentIndex = (currentIndex + 1) % images.length; // Update indeks
+    imageElement.src = images[currentIndex]; // Set sumber gambar
 }
+
+// Jalankan fungsi changeImage setiap 3 detik (3000 ms)
+setInterval(changeImage, 3000);
