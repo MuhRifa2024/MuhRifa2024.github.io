@@ -48,4 +48,4 @@ function changeImage() {
 }
 
 // Jalankan fungsi changeImage setiap 3 detik (3000 ms)
-setInterval(changeImage, 3000);
+setInterval(changeImage, 1000);
