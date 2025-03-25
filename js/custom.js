@@ -35,7 +35,10 @@ $(".owl-carousel").owlCarousel({
 const images = [
     "images/PP2.png",
     "images/PP3.png",
-    "images/PP4.png"
+    "images/PP4.png",
+    "images/PP5.png",
+    "images/PP6.png",
+    "images/PP7.png"
 ];
 
 let currentIndex = 0; // Indeks gambar saat ini
@@ -48,4 +51,4 @@ function changeImage() {
 }
 
 // Jalankan fungsi changeImage setiap 3 detik (3000 ms)
-setInterval(changeImage, 1000);
+setInterval(changeImage, 500);
