@@ -399,10 +399,10 @@ a:focus {
   margin-bottom: 0;
 }
 
-.feature_section .feature_container .box:hover, .feature_section .feature_container .box.active {
-  background-color: #ff8a1d;
+/* .feature_section .feature_container .box:hover, .feature_section .feature_container .box.active {
+  background-color: #000000;
   color: #ffffff;
-}
+} */
 
 .feature_section .feature_container .box:hover .img-box svg, .feature_section .feature_container .box.active .img-box svg {
   fill: #ffffff;
@@ -765,7 +765,7 @@ a:focus {
 }
 
 .info_section a:hover {
-  color: #ff8a1d;
+  color: #000000;
 }
 
 .info_items a {
@@ -834,7 +834,7 @@ a:focus {
 .progress-bar {
   width: 300px;
   height: 12px;
-  background: #303030;
+  background: #37474F;
   border-radius: 8px;
   position: relative;
   overflow: hidden;
@@ -842,7 +842,7 @@ a:focus {
 
 .progress {
   height: 100%;
-  background: #f7a169;
+  background: #FFB74D;
   color: rgb(255, 248, 248);
   font-size: 0.8rem;
   align-items: center;
