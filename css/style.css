@@ -834,7 +834,7 @@ a:focus {
 .progress-bar {
   width: 300px;
   height: 12px;
-  background: #37474F;
+  background: #e0e0e0;
   border-radius: 8px;
   position: relative;
   overflow: hidden;
@@ -842,11 +842,14 @@ a:focus {
 
 .progress {
   height: 100%;
-  background: #FFB74D;
-  color: rgb(255, 248, 248);
-  font-size: 0.8rem;
+  width: 80%;
+  background: linear-gradient(to right, #ffb74d, #37474f);
+  color: #ffffff;
+  font-size: 0.75rem;
   align-items: center;
-  padding-right: 20px;
+  display: flex;  
+  justify-content: flex-end;
+  padding-right: 8px;
   font-weight: bold;
   border-radius: 5px;
   transition: width 1s ease-in-out;
