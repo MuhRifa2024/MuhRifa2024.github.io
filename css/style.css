@@ -843,27 +843,22 @@ a:focus {
 .progress {
   height: 100%;
   width: 80%;
-  background: linear-gradient(120deg, #ffb74d, #37474f, #ffb74d);
   color: #fff;
-  text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   padding-right: 8px;
   font-weight: 900;
   border-radius: 8px;
-  transition: width 1s ease-in-out;
-  background-size: 40px 100%;
-  background-position: 0 0;
+
+  background: linear-gradient(120deg, #FFB74D, #37474F, #FFB74D);
+  background-size: 200% 100%;
+  animation: gradientMove 3s linear infinite;
 }
 
-/* Hover animasi */
-.progress{
-  animation: moveStripes 1s linear infinite;
-}
 
-@keyframes moveStripes {
+@keyframes gradientMove {
   0% {
     background-position: 0 0;
   }
@@ -890,4 +885,3 @@ a:focus {
 }
 
 /* end footer section*/
-/*# sourceMappingURL=style.css.map */
