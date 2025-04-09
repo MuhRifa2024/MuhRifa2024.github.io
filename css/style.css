@@ -854,7 +854,7 @@ a:focus {
 
   background: linear-gradient(120deg, #FFB74D, #37474F, #FFB74D);
   background-size: 200% 100%;
-  animation: gradientMove 3s linear infinite;
+  animation: gradientMove 2.5s linear infinite;
 }
 
 
@@ -863,7 +863,7 @@ a:focus {
     background-position: 0 0;
   }
   100% {
-    background-position: 40px 0;
+    background-position: 180px 0;
   }
 }
 
