@@ -149,7 +149,7 @@ a:focus {
 .nav-link-about {
   font-size: 1rem;
   color: white;
-  background-color: #888888;
+  : #888888;
   text-decoration: none;
   border-radius: 5px;
   padding: 8px 16px;
@@ -309,7 +309,7 @@ a:focus {
 .slider_section .detail-box h1 {
   font-weight: bold;
   margin-bottom: 25px;
-  color: #0355cc;
+  color: #03cc46;
 }
 
 .slider_section .detail-box p {
@@ -449,7 +449,7 @@ a:focus {
 }
 
 .professional_section {
-  background-color: #d1e3ff;
+  background-color: #ffdad1;
 }
 
 .professional_section .row {
@@ -458,7 +458,8 @@ a:focus {
   align-items: center;
 }
 
-.professional_section .img-box img {
+/* INI DIA GAMBAR PP>PNG */
+.professional_section .img-box img { 
   width: 100%;
 }
 
