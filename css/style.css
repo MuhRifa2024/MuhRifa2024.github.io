@@ -834,25 +834,47 @@ a:focus {
 .progress-bar {
   width: 300px;
   height: 12px;
-  background: #e0e0e0;
+  background: #E0E0E0; /* latar belakang kosong */
   border-radius: 8px;
-  position: relative;
   overflow: hidden;
+  position: relative;
 }
 
 .progress {
   height: 100%;
   width: 80%;
-  background: linear-gradient(to right, #ffb74d, #37474f);
-  color: #ffffff;
+  background: repeating-linear-gradient(
+    45deg,
+    #FFB74D,
+    #FFB74D 10px,
+    #FFD180 10px,
+    #FFD180 20px
+  );
+  color: #FFFFFF;
   font-size: 0.75rem;
+  display: flex;
   align-items: center;
-  display: flex;  
   justify-content: flex-end;
   padding-right: 8px;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 8px;
   transition: width 1s ease-in-out;
+  background-size: 40px 100%;
+  background-position: 0 0;
+}
+
+/* Hover animasi */
+.progress-bar:hover .progress {
+  animation: moveStripes 1s linear infinite;
+}
+
+@keyframes moveStripes {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 40px 0;
+  }
 }
 
 /* footer section*/
