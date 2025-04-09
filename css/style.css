@@ -844,13 +844,14 @@ a:focus {
   height: 100%;
   width: 80%;
   background: linear-gradient(120deg, #ffb74d, #37474f, #ffb74d);
-  color: #FFFFFF;
-  font-size: 0.75rem;
+  color: #fff;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  font-size: 0.85rem;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   padding-right: 8px;
-  font-weight: bold;
+  font-weight: 900;
   border-radius: 8px;
   transition: width 1s ease-in-out;
   background-size: 40px 100%;
