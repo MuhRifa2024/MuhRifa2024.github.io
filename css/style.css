@@ -843,13 +843,7 @@ a:focus {
 .progress {
   height: 100%;
   width: 80%;
-  background: repeating-linear-gradient(
-    45deg,
-    #FFB74D,
-    #FFB74D 10px,
-    #FFD180 10px,
-    #FFD180 20px
-  );
+  background: linear-gradient(120deg, #ffb74d, #37474f, #ffb74d);
   color: #FFFFFF;
   font-size: 0.75rem;
   display: flex;
@@ -864,7 +858,7 @@ a:focus {
 }
 
 /* Hover animasi */
-.progress-bar:hover .progress {
+.progress{
   animation: moveStripes 1s linear infinite;
 }
 
